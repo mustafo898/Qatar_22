@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/main">
+
+    <fragment
+        android:id="@+id/about_item"
+        android:name="dark.composer.qatar2022.drawer.presentation.about_team.AboutTeamFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_about_team" />
+
+    <fragment
+        android:id="@+id/main"
+        android:name="dark.composer.qatar2022.drawer.presentation.main.MainFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:id="@+id/all_matches"
+        android:name="dark.composer.qatar2022.drawer.presentation.all_matches.AllMatchesFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_all_matches" />
+</navigation>
